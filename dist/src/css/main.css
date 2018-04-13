@@ -1,0 +1,202 @@
+html, body, li {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body, html {
+  margin: 20px 0;
+  color: #929698;
+}
+
+.layout-test-container .container {
+  width: 100%;
+  max-width: 1296px;
+  /*---------- Tooltip Styles Start ------------------*/
+  /*---------- Tooltip Styles End ------------------*/
+}
+
+.layout-test-container .container .functions-cotainer {
+  position: relative;
+}
+
+.layout-test-container .container .functions-cotainer .rounded-circle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.layout-test-container .container .progress {
+  border: solid 1px #dfdfe0;
+  background-color: #ffffff;
+}
+
+.layout-test-container .container .header-form, .layout-test-container .container .card {
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.layout-test-container .container .border-right-only {
+  border-right: solid 2px #dddddd;
+}
+
+.layout-test-container .container .header-form {
+  border: solid 1px #e6e6e7;
+  border-radius: 6px;
+  background-color: #efeff0;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.layout-test-container .container .high-school-header {
+  font-weight: bold;
+  font-size: 24px;
+  color: #464648;
+}
+
+.layout-test-container .container .plus-btn-background {
+  background-color: #27b7e8;
+}
+
+.layout-test-container .container .plus-btn-background button {
+  cursor: pointer;
+}
+
+.layout-test-container .container .dashed-border {
+  border: dashed 1px #cccccc;
+  border-radius: 7px;
+  margin: 10px 0;
+}
+
+.layout-test-container .container .solid-border {
+  border: solid 1px #cccccc;
+  border-radius: 7px;
+  margin: 5px 0;
+}
+
+.layout-test-container .container .side-border-norm {
+  border-left: solid 12px limegreen;
+}
+
+.layout-test-container .container .side-border-tooltip {
+  display: none;
+  border-left: solid 12px red;
+  position: absolute;
+  top: 79px;
+  width: 95.5%;
+  z-index: 5;
+}
+
+.layout-test-container .container .side-border-tooltip:after, .layout-test-container .container .side-border-tooltip:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.layout-test-container .container .side-border-tooltip:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 12px;
+  margin-left: 39.5%;
+}
+
+.layout-test-container .container .side-border-tooltip:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: #ebedef;
+  border-width: 15px;
+  margin-left: 38.5%;
+}
+
+.layout-test-container .container #tool-tip-trigger {
+  position: absolute;
+  top: -8px;
+  left: -13px;
+  width: 105%;
+  height: 67px;
+  background: transparent;
+  z-index: 5;
+}
+
+.layout-test-container .container .card-content {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.layout-test-container .container .remaining-credit-container {
+  max-height: 30px;
+  margin-top: 8px;
+}
+
+.layout-test-container .container .card-header {
+  background-color: #efeff0;
+  padding: 1rem 0.5rem 0.15rem !important;
+}
+
+.layout-test-container .container .card-header h5 {
+  color: #464648;
+}
+
+.layout-test-container .container .column-header {
+  font-size: 17px;
+  font-weight: bold;
+  color: #464648;
+}
+
+.layout-test-container .container label.custom-control .custom-control-indicator {
+  border: solid 1px #929698;
+  background-color: #ffffff;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.layout-test-container .container .bg-success {
+  background-color: #81c120 !important;
+}
+
+.layout-test-container .container .rounded-circle-top, .layout-test-container .container .rounded-circle-bottom {
+  display: inline-block;
+  padding-top: 1px !important;
+  text-align: center;
+  font-size: 14px;
+  -webkit-transform: translate(4%, -6%);
+          transform: translate(4%, -6%);
+}
+
+.layout-test-container .container .rounded-circle-top {
+  width: 24px;
+  height: 24px;
+}
+
+.layout-test-container .container .rounded-circle-bottom {
+  width: 21px;
+  height: 21px;
+  line-height: 1.1;
+  border: solid 1px #000000;
+}
+
+@media (max-width: 1296px) {
+  .layout-test-container .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout-test-container .container .border-right-only {
+    border-right: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

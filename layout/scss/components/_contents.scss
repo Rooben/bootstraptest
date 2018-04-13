@@ -1,0 +1,202 @@
+body, html{
+    margin: 20px 0;
+    color: $app_generic_text_color;
+}
+
+.layout-test-container{
+    .container{
+        width: 100%;
+        max-width: 1296px;
+
+        .functions-cotainer{
+            position: relative;
+            .rounded-circle{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+        }
+
+        .progress{
+            border: solid 1px #dfdfe0;
+            background-color: $standard_white_color;
+        }
+
+        .header-form, .card{
+            border-radius: 8px;
+            margin-bottom: 5px;
+        }
+
+        .border-right-only{
+            border-right: solid 2px #dddddd;
+        }
+
+        .header-form{
+            border: solid 1px #e6e6e7;
+            border-radius: 6px;
+            background-color: $app_gray_bg;
+            font-size: 13px;
+            line-height: 2;
+        }
+        .high-school-header{
+            font-weight: bold;
+            font-size: 24px;
+            color: $header_text_color;
+        }
+
+        .plus-btn-background{
+            background-color: #27b7e8;
+        }
+
+        .plus-btn-background button{
+            cursor: pointer;
+        }
+
+        .dashed-border{
+            border: dashed 1px $border_gray_color;
+            border-radius: 7px;
+            margin: 10px 0;
+        }
+
+        .solid-border{
+            border: solid 1px $border_gray_color;
+            border-radius: 7px;
+            margin: 5px 0;
+        }
+        .side-border-norm {
+            border-left: solid 12px limegreen;
+        }
+
+        /*---------- Tooltip Styles Start ------------------*/
+        .side-border-tooltip {
+            display: none;
+            border-left: solid 12px red;
+            position: absolute;
+            top: 79px;
+            width: 95.5%;
+            z-index: 5;
+        }
+
+        .side-border-tooltip:after, .side-border-tooltip:before {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .side-border-tooltip:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-top-color: $standard_white_color;
+            border-width: 12px;
+            margin-left: 39.5%;
+        }
+        .side-border-tooltip:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-top-color: #ebedef;
+            border-width: 15px;
+            margin-left: 38.5%;
+        }
+        /*---------- Tooltip Styles End ------------------*/
+
+
+        #tool-tip-trigger{
+            position: absolute;
+            top: -8px;
+            left: -13px;
+            width: 105%;
+            height: 67px;
+            background: transparent;
+            z-index: 5;
+        }
+
+
+        .card-content{
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .remaining-credit-container{
+            max-height: 30px;
+            margin-top: 8px;
+        }
+
+        .card-header{
+            background-color: $app_gray_bg;
+            padding: 1rem 0.5rem 0.15rem !important;
+
+            h5{
+                color: $header_text_color;
+            }
+        }
+
+
+
+        .column-header{
+            font-size: 17px;
+            font-weight: bold;
+            color: $header_text_color;
+        }
+
+        label.custom-control {
+            .custom-control-indicator{
+                border: solid 1px #929698;
+                background-color: $standard_white_color;
+                width: 1.1rem;
+                height: 1.1rem;
+            }
+        }
+
+        .bg-success{
+            background-color: #81c120 !important;
+        }
+
+        %rounded{
+            display: inline-block;
+            padding-top: 1px !important;
+            text-align: center;
+            font-size: 14px;
+            transform: translate(4%, -6%);
+        }
+
+        .rounded-circle-top {
+            width: 24px;
+            height: 24px;
+            @extend %rounded;
+        }
+
+        .rounded-circle-bottom {
+            width: 21px;
+            height: 21px;
+            line-height: 1.1;
+            @extend %rounded;
+            border: solid 1px $standard_black_color;
+        }
+    }
+
+}
+
+
+
+
+@media(max-width: 1296px){
+    .layout-test-container{
+        .container {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .layout-test-container{
+        .container {
+            .border-right-only{
+                border-right: none;
+            }
+        }
+    }
+}
