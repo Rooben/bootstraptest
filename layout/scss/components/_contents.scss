@@ -151,6 +151,11 @@ body, html{
             }
         }
 
+        .custom-control-input:checked~.custom-control-indicator {
+            color: #fff;
+            background-color: #0275d8;
+        }
+
         .bg-success{
             background-color: #81c120 !important;
         }
