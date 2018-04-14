@@ -162,6 +162,11 @@ body, html {
   height: 1.1rem;
 }
 
+.layout-test-container .container .custom-control-input:checked ~ .custom-control-indicator {
+  color: #fff;
+  background-color: #0275d8;
+}
+
 .layout-test-container .container .bg-success {
   background-color: #81c120 !important;
 }
