@@ -23,6 +23,8 @@ gulp.task('dist:copy', function(){
         .pipe(gulp.dest('./dist/'));
     gulp.src('./layout/js/**/*.js')
         .pipe(gulp.dest('./dist/src/js/'));
+    gulp.src(['./layout/bootstrap/**/*.js', './layout/bootstrap/**/*.css', './layout/bootstrap/**/*.map'])
+        .pipe(gulp.dest('./dist/bootstrap/'));
 });
 
 gulp.task('sass:watch', function(){
