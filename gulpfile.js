@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
-var gulpClean  = require('gulp-clean');
 
 gulp.task('sass:build', function(){
   return gulp
@@ -18,10 +17,6 @@ gulp.task('sass:build', function(){
     .pipe(gulp.dest('dist/src/css'));
 });
 
-gulp.task('dist:clean', function(){
-    gulp.src('./dist/src/')
-        .pipe(gulpClean());
-});
 
 gulp.task('dist:copy', function(){
     gulp.src('./layout/*.html')
@@ -32,9 +27,10 @@ gulp.task('dist:copy', function(){
 
 gulp.task('sass:watch', function(){
   gulp.watch('layout/**/*.scss', ['sass:build']);
+  gulp.watch('layout/*.html', ['dist:copy']);
 });
 
-gulp.task('sass', ['dist:clean', 'sass:build', 'dist:copy', 'sass:watch']);
+gulp.task('sass', ['sass:build', 'dist:copy', 'sass:watch']);
 
 gulp.task('default', function(){
   console.log('Use npm scripts');
